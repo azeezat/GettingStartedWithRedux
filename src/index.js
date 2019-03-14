@@ -1,17 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {createStore,applyMiddleware} from 'redux'
-import thunk from 'redux-thunk'
-import './index.css';
 import { Provider } from 'react-redux';
+import {store} from './store'
+import './index.css';
 import Form from './components/Form';
-import {rootReducer} from './reducers'
 import * as serviceWorker from './serviceWorker';
 
-const store = createStore(rootReducer, applyMiddleware(thunk))
 
-ReactDOM.render(
-   
+ReactDOM.render(  
     <Provider store={store}>
         <Form />
     </Provider>,

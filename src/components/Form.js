@@ -21,7 +21,6 @@ class Form extends Component {
                     value={this.props.text || ''}
                     onChange={e => this.props.handleChange({ name: "text", value: e.target.value })}
                 />
-               
             </div>
 
         );

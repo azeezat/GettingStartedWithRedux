@@ -13,5 +13,3 @@ npm install
 ### Author
 
 Azeezat Raheem
-
-
